@@ -1,2 +1,1 @@
-# webdas
-# Coba Commit dan Merge
+ini adalah tugas minggu ke 6
