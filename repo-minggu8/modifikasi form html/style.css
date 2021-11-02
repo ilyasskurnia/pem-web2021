@@ -1,0 +1,43 @@
+body{
+    background-color: #7fd2e3;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pov{
+    width: 70%;
+	margin: auto;
+	color: rgb(0, 0, 0);
+	border-radius: 40px;
+	font-family: 'Times New Roman', Times, serif;
+	background-color: #9aa59d
+}
+
+.container{
+    padding: 2px;
+	margin: 5%
+}
+
+h2{
+    color: rgb(14, 13, 13);
+    font-family: monospace;
+    font-size: 30px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 1px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background: none;
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+   }

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORMULIR PPDB JALUR ZONASI TAHUN 2021</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pov">
+        <div class="container">
+            <h2 align="center">FORMULIR PPDB SMA JALUR ZONASI TAHUN 2021</h2>
+            <form action="/proses.php" target="_blank" method="POST"  name="fcontoh">
+                <table border="1" height="150px" width="100%">
+                    <!--Row1-->
+                    <tr>
+                        <th align="center">Nomor</th>
+                        <th align="left" colspan="2">INFO PENDAFTARAN</th>
+                    </tr>
+                    <!--Row2-->
+                    <tr>
+                        <th>1</th>
+                        <td><label for="fnisn">NISN :</label></td>
+                        <td><input type="tel" id="fnisn" name="fnisn" pattern="[0-9]{10}" required>
+                        <small>*contoh:001861xxxx</small></td>
+                    </tr>
+                    <!--Row3-->
+                    <tr>
+                        <th>2</th>
+                        <td><label for="asalSekolah">Asal Sekolah :</label></td>
+                        <td><select id="asalSekolah" name="asalSekolah">
+                            <option value="pilih" placeholder selected>~pilih~</option>
+                            <option value="smpn1semarang">SMPN 1 SEMARANG</option>
+                            <option value="smpn2semarang">SMPN 2 SEMARANG</option>
+                            <option value="smpn3semarang">SMPN 3 SEMARANG</option>
+                            <option value="smpn4semarang">SMPN 4 SEMARANG</option>
+                            <option value="smpn5semarang">SMPN 5 SEMARANG</option>
+                            <option value="smpn6semarang">SMPN 6 SEMARANG</option>
+                            <option value="smpn7semarang">SMPN 7 SEMARANG</option>
+                            <option value="smpn8semarang">SMPN 8 SEMARANG</option>
+                            <option value="smpn9semarang">SMPN 9 SEMARANG</option>
+                            <option value="smpn10semarang">SMPN 10 SEMARANG</option>
+                            <option value="lainnya">Lainnya</option>
+                            </select required="">
+                        </td>
+                    </tr>
+                    <!--Row4-->
+                    <tr>
+                        <th>3</th>
+                        <td><label for="tahunLulus">Tahun Lulus :</label></td>
+                        <td><input type="date" id="tahunLulus" name="tahunLulus" required=""></td>
+                    </tr>
+                    <!--Row5-->
+                    <tr>
+                        <th align="left" colspan="3">DATA CALON PESERTA</th>
+                    </tr>
+                    <!--Row6-->
+                    <tr>
+                        <th>6</th>
+                        <td><label for="fnama">Nama Lengkap :</label></td>
+                        <td><input type="text" id="fnama" name="fnama" type="text" required=""></td>
+                    </tr>
+                    <!--Row7-->
+                    <tr>
+                        <th>7</th>
+                        <td><label for="fnik">NIK :</label></td>
+                        <td><input type="tel" id="fnik" name="fnik" pattern="[0-9]{16}" required="">
+                        <small>*contoh:337415xxxxxxxxxx</small></td>
+                    </tr>
+                    <!--Row8-->
+                    <tr>
+                        <th>8</th>
+                        <td><label for="fttl">Tempat,Tanggal lahir :</label></td>
+                        <td><input type="text" id="fttl" name="fttl" type="text" required=""></td>
+                    </tr>
+                    <!--Row9-->
+                    <tr>
+                        <th></th>
+                        <td><label for="aktaKelahiran">Foto Copy Akta Kelahiran Yang Telah Dilegalisir :</label></td>
+                        <td><input type="file" id="aktaKelahiran" name="aktaKelahiran" required=""></td>
+                    </tr>        
+                    <!--Row10-->
+                    <tr>
+                        <th>9</th>
+                        <td>Jenis Kelamin :</td>
+                        <td><input type="radio" id="laki-laki" name="jenis_kelamin" value="LAKI-LAKI">
+                        <label for="laki-laki" >LAKI-LAKI</label>
+                        <input type="radio" id="perempuan" name="jenis_kelamin" value="PEREMPUAN">
+                        <label for="perempuan">PEREMPUAN</label required=""></td>
+                    </tr>
+                    <!--Row11-->
+                    <tr>
+                        <th>10</th>
+                        <td>Alamat :</td>
+                        <td><textarea name="alamat"placeholder="ketik disini" rows="2" cols=30"></textarea required=""></td>
+                    </tr>
+                    <!--Row12-->
+                    <tr>
+                        <th>11</th>
+                        <td align="right"><label for="fdesa">Desa/Kel. :</label></td>
+                        <td><input type="text" id="fdesa" name="fdesa" type="text" required=""></td>
+                    </tr>
+                    <!--Row13-->
+                    <tr>
+                        <th>12</th>
+                        <td align="right"><label for="fkecamatan">Kecamatan :</label></td>
+                        <td><input type="text" id="fkecamatan" name="fkecamatan" type="text" required=""></td>
+                    </tr>
+                    <!--Row14-->
+                    <tr>
+                        <th>13</th>
+                        <td align="right"><label for="fkabupaten">Kabupaten :</label></td>
+                        <td><input type="text" id="fkabupaten" name="fkabupaten" type="text" >
+                        <small>*kosongkan jika tidak diperlukan</small></td>
+                    </tr>
+                    <!--Row15-->
+                    <tr>
+                        <th>14</th>
+                        <td align="right"><label for="fprovinsi">Provinsi :</label></td>
+                        <td><input type="text" id="fprovinsi" name="fprovinsi" type="text" required=""></td>
+                    </tr>
+                    <!--Row16-->
+                    <tr>
+                        <th>15</th>
+                        <td><label for="email">Email Aktif :</label></td>
+                        <td><input type="email" id="email" name="email" required=""></td>
+                    </tr>
+                    <!--Row17-->
+                    <tr>
+                        <th align="left" colspan="3">DATA ORANG TUA</th>
+                    </tr>
+                    <!--Row18-->
+                    <tr>
+                        <th>16</th>
+                        <td><label for="fnomorKartukeluarga">Nomor Kartu Keluarga:</label></td>
+                        <td><input type="tel" id="fnomorKartukeluarga" name="fnomorKartukeluarga" pattern="[0-9]{16}" required="">
+                        <small>*contoh:337415xxxxxxxxxx</small></td>
+                    </tr>
+                    <!--Row19-->
+                    <tr>
+                        <th>17</th>
+                        <td><label for="fnamaAyah">Nama Ayah Kandung :</label></td>
+                        <td><input type="text" id="fnamaAyah" name="fnamaAyah" type="text" required=""></td>
+                    </tr>
+                    <!--Row20-->
+                    <tr>
+                        <th>18</th>
+                        <td><label for="fagamaAyah">Agama :</label></td>
+                        <td><input type="text" id="fagamaAyah" name="fagamaAyah" type="text" required=""></td>
+                    </tr>
+                    <!--Row21-->
+                    <tr>
+                        <th>19</th>
+                        <td><label for="fpekerjaanAyah">Pekerjaan :</label></td>
+                        <td><input type="text" id="pekerjaanAyah" name="pekerjaanAyah" type="text" required=""></td>
+                    </tr>
+                    <!--Row22-->
+                    <tr>
+                        <th>20</th>
+                        <td><label for="fnamaIbu">Nama Ibu Kandung :</label></td>
+                        <td><input type="text" id="fnamaIbu" name="fnamaIbu" type="text" required=""></td>
+                    </tr>
+                    <!--Row23-->
+                    <tr>
+                        <th>21</th>
+                        <td><label for="fagamaIbu">Agama :</label></td>
+                        <td><input type="text" id="fagamaIbu" name="fagamaIbu" type="text" required=""></td>
+                    </tr>
+                    <!--Row24-->
+                    <tr>
+                        <th>22</th>
+                        <td><label for="fpekerjaanIbu">Pekerjaan :</label></td>
+                        <td><input type="text" id="pekerjaanIbu" name="pekerjaanIbu" type="text" required=""></td>
+                    </tr>
+                    <!--Row25-->
+                    <tr>
+                        <th>23</th>
+                        <td>Alamat Orang Tua :</td>
+                        <td><textarea name="alamatOrtu" placeholder="ketik disini" rows="2" cols=30"></textarea required=""></td>
+                    </tr>
+                    <!--Row26-->
+                    <tr>
+                        <th>24</th>
+                        <td align="right"><label for="fdesaOrtu">Desa/Kel. :</label></td>
+                        <td><input type="text" id="fdesaOrtu" name="fdesaOrtu" type="text" required=""></td>
+                    </tr>
+                    <!--Row27-->
+                    <tr>
+                        <th>25</th>
+                        <td align="right"><label for="fkecamatanOrtu">Kecamatan :</label></td>
+                        <td><input type="text" id="fkecamatanOrtu" name="fkecamatanOrtu" type="text" required=""></td>
+                    </tr>
+                    <!--Row28-->
+                    <tr>
+                        <th>26</th>
+                        <td align="right"><label for="fkabupatenOrtu">Kabupaten :</label></td>
+                        <td><input type="text" id="fkabupatenOrtu" name="fkabupatenOrtu" type="text">
+                        <small>*kosongkan jika tidak diperlukan</small></td>
+                    </tr>
+                    <!--Row29-->
+                    <tr>
+                        <th>27</th>
+                        <td align="right"><label for="fprovinsiOrtu">Provinsi :</label></td>
+                        <td><input type="text" id="fprovinsiOrtu" name="fprovinsiOrtu" type="text" required=""></td>
+                    </tr>
+                    <!--rowbottom-->
+                    <tr>
+                        <td align="center"colspan="3"><input type="submit" value="Submit"><td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+<footer>
+    <p align="center"><b>
+        Copyright<a href="https://www.instagram.com/ilyasskurnia/" target="_blank">
+        &copy;Ilyas Kurnia 2021</a></b>
+    </p>
+</footer>
+</html>
