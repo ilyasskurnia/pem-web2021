@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Script&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 109vh;
+    background-image: url(../images/registrasi.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.main{
+    width: 1170px;
+    margin: auto;
+}
+.main ul{
+    margin: 0;
+    padding: 50px 0;
+    list-style: none;
+    text-align: right;
+}
+.main ul li{
+    float: none;
+    display: inline-block;
+}
+.main ul li:nth-child(1){float: left;}
+.main ul li:nth-child(2){float: left;}
+.main ul li:nth-child(3){float: left;}
+.main ul li a{
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transform: uppercase;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family:fantasy console;
+    padding: 5px 20px;
+}
+.main ul li a:hover{transition: 1s;
+background-color:darkslategray;
+border-radius: 10px;
+color:yellow;
+}
+.nav-link2{
+    border-radius: 50px 50px 50px 50px;
+    background-color: chocolate;
+}
+#navbar{
+    width: 100%;
+    position: absolute;
+}
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    left: 51%;
+    top: 0%;
+    transform: translateX(-50%);
+}
+.logo img{
+    width: 100%;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+.content .par{
+    font-family: 'Nova Script', cursive;
+    padding-left: 20px;
+    font-family: Arial;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.content .par2{
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.12px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Miltonian Tattoo', cursive;
+    color: #fffb00;
+    font-size: 50px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    align-content: center;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.cn:hover{
+    background-color: rgb(75, 36, 148);
+}
+.content span{
+    color: #fffb00;
+    font-size: 60px;
+}
+.form{
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.form h2{
+    width: 240px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.btnn:hover{
+    background: rgb(75, 36, 148);
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a {
+    text-decoration: none;
+    color: #ff7200;
+}
+.form .link a:hover{
+    background-color: rgb(75, 36, 148);
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    align-content: center;
+    width: 100px;
+}

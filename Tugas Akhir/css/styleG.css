@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 109vh;
+    background-image: url(../images/background5.png);
+    background-position: center;
+    background-size: cover;
+}
+.main{
+    width: 1170px;
+    margin: auto;
+}
+.main ul{
+    margin: 0;
+    padding: 50px 0;
+    list-style: none;
+    text-align: right;
+}
+.main ul li{
+    float: none;
+    display: inline-block;
+}
+.main ul li:nth-child(1){float: left;}
+.main ul li:nth-child(2){float: left;}
+.main ul li:nth-child(3){float: left;}
+.main ul li a{
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transform: uppercase;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family:fantasy console;
+    padding: 5px 20px;
+}
+.main ul li a:hover{transition: 1s;
+background-color:darkslategray;
+border-radius: 10px;
+color:yellow;
+}
+.nav-link2{
+    border-radius: 50px 50px 50px 50px;
+    background-color: chocolate;
+}
+#navbar{
+    width: 100%;
+    position: absolute;
+}
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    left: 51%;
+    top: 0%;
+    transform: translateX(-50%);
+}
+.logo img{
+    width: 100%;
+}
+input{
+    display: none;
+}
+.container1{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-weight: normal;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 45px;
+    line-height: 105px;
+    color: #fff;
+    position: relative;
+    margin-top: 40px 0;
+    padding-top: 90px;
+    padding-bottom: 160px;
+}
+.top-content{
+    background-color: rgb(243, 243, 243);
+    width: 90%;
+    margin: 0 auto 10px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px;
+}
+h3{
+    height: 111%;
+    width: auto;
+    background-color: #5F7ADB;
+    line-height: 18px;
+    padding: 13px 30px;
+    color: #fff;
+}
+label{
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    transition: color .5s;
+}
+label:hover{
+    color: orange;
+}
+.photo-galery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.pic{
+    position: relative;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgray;
+    cursor: pointer;
+    transition: .5s;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+}
+.pic::before{
+    content: "Photo Gallery";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    background-color: rgb(0, 0, 0,.4);
+    transition: .3s;
+}
+.pic:hover::after{
+    height: 100%;
+}
+.pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+#check1:checked ~ .container1 .photo-galery .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+#check2:checked ~ .container1 .photo-galery .family{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+#check2:checked ~ .container1 .photo-galery .child,
+#check2:checked ~ .container1 .photo-galery .place{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+#check3:checked ~ .container1 .photo-galery .child{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+#check3:checked ~ .container1 .photo-galery .family,
+#check3:checked ~ .container1 .photo-galery .place{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+#check4:checked ~ .container1 .photo-galery .place{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+#check4:checked ~ .container1 .photo-galery .family,
+#check4:checked ~ .container1 .photo-galery .child{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+.footer{
+    margin-top: 40px;
+    box-sizing: border-box;
+    background-image: url(../images/background6.jpg);
+    background-size: cover;
+    padding: 70px 0;
+}
+.container3{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 0px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+    padding-left: 28px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 23px;
+}
+.footer-col ul li a{
+    padding-top: 5px;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+    cursor: pointer;
+}
+.footer-col iframe{
+    font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 2px 31px 24px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.text-center{
+    margin-top: 10px;
+    color: white;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleS.css">
+    <link rel="shortcut icon" href="images/ms-icon-310x310.png" type="image/x-icon">
+    <title>Sign Up</title>
+</head>
+<body>
+    <main>
+    <section class="signup-box">
+        <h1>Sign Up</h1>
+        <h4 class="par">Nikmati penawaran menarik setiap harinya</h4>
+        <form>
+            <tr>
+                <td><label for="Nama">Nama Lengkap </label></td>
+                <td><input type="text" id="Nama" name="Nama" placeholder="Masukkan Nama lengkap anda" required=""></td>
+            </tr>
+            <tr>
+                <td><label for="tanggalLahir">Tanggal Lahir </label></td>
+                <td><input type="date" id="tanggalLahir" name="tanggalLahir" required=""></td>
+            </tr>
+            <tr>
+                <td><label for="username">Username </label></td>
+                <td><input type="text" id="username" name="Username" placeholder="Masukkan Username yang nantinya anda gunakan" required=""></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Aktif </label></td>
+                <td><input type="email" id="email" name="email"  placeholder="Masukkan email anda " required=""></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" placeholder="Masukkan password " required=""></td>
+            </tr>
+            <tr>
+                <td><label for="password2">Masukkan Ulang Password</label></td>
+                <td><input type="password" name="password2" placeholder="Masukkan Ulang password anda " required=""></td>
+            </tr>
+            <button class="btnn" type="submit"  value="Submit" ><a href="registrasi.html" onclick="alert('Selamat akun anda berhasil didaftarkan, anda akan dialihkan menuju halaman Login')" >Sign in</a></button>
+        </form>
+        <p>
+          Dengan menekan Sign in, berarti anda menyetujui <br />
+          <a href="https://policies.google.com/terms">Terms and Condition</a> dan <a href="https://policies.google.com/privacy">Policy Privacy</a> <br> <a> perusahaan kami</a>
+        </p>
+    </section>
+    <section>
+    <p class="para-2">
+        Already have an account? <a href="registrasi.html">Login here</a>
+    </p>
+    </section>
+  
+    </main>
+    <script>
+		var par = document.getElementsByClassName("par");
+		setInterval(function () {
+		par[0].style.color = "orange";
+		setTimeout(function () {
+		par[0].style.color = "blue";
+		}, 500)
+		}, 1000)
+	</script>
+</body>
+</html>
